@@ -1,1 +1,22 @@
-
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>mBaaS</title>
+  </head>
+    <script type="text/javascript" src="ncmb.min.js" charset="utf-8"></script>
+    <script>
+      var ncmb = new NCMB("YOUR_APPLICATION_KEY","YOUR_CLIENT_KEY");
+      
+      var TestClass = ncmb.DataStore("TestClass");
+      
+      var testClass = new TestClass();
+      testClass.set("massage", "Hello, NCMB!");
+      testClass.save()
+        .then(function(){
+         
+        })
+        .catch(function(err){
+         
+        })
+    </script>  
+</html>
